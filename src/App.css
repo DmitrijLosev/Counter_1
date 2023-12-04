@@ -1,38 +1,93 @@
+
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter {
+    align-self: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table {
+    margin: 5px;
+    text-align: center;
+    font-size: 80px;
+    color: midnightblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.message {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Javanese Text", sans-serif;
+
 }
 
-.App-link {
-  color: #61dafb;
+.redTable {
+    color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.buttons {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.buttons button {
+    width: 80px;
+    margin: 0 auto;
+    height: 30px;
+    border-radius: 5px;
+    border: unset;
+    background-color: midnightblue;
+    color: honeydew;
+    cursor: pointer;
+}
+
+.buttons button:disabled {
+    opacity: .5;
+}
+
+.common {
+    margin: 5px;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.set {
+    width: 200px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputNum {
+    width: 50px;
+    text-align: center;
+    color: midnightblue;
+}
+
+.label {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Javanese Text", sans-serif;
+    color: midnightblue
+}
+
+.errorInput {
+    box-shadow: inset 0 0 5px 5px red;
 }
